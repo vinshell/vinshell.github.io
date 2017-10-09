@@ -1,0 +1,70 @@
+body{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+	background-color:#38393a;
+	color:white;
+	text-align:center;
+    animation-name: colorize;
+    animation-delay: 5s;
+    animation-duration: 7s;
+    animation-iteration-count:infinite;
+    animation-timing-function:ease-in;
+}
+
+img{
+    height: 27%;
+    width: 27%;
+    padding-top: 7%;
+}
+
+
+img.animate{
+    animation-name: moveitmoveit;
+    animation-delay: 5s;
+    animation-duration: 7s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+@keyframes moveitmoveit{
+    0% {transform:rotate(0deg) scale(1); 
+    filter: none;}
+    50% {transform:rotate(180deg) scale(1.4); 
+    filter: none;}
+    100% {transform:rotate(360deg) scale(1); 
+    filter: none;}
+}
+
+@keyframes colorize{
+    0% {background-color:#007aff;}
+    25% {background-color:#ff3b30;}
+    50% {background-color:#ffcc00;}
+    75% {background-color:#4cd964;}
+    100% {background-color:#5856d6;}
+}
+
+@media(max-width:767px) {
+    img{
+        height: 55%;
+        width: 55%;
+        margin-top: 50%;
+    }
+
+    .message {
+        padding-top: 0%;
+    }
+
+    .message > h1 {
+        font-size: 45px;
+    }	
+
+    h2{
+		font-size: 16px;
+	}
+
+    .break {
+        width: 95%;
+    }
+}
