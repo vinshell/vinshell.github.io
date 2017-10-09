@@ -23,7 +23,10 @@
             var audio = document.getElementById("fantasy");
             audio.play();
         }
-        setTimeout(play,5000);
+        function clickit(){
+            document.getElementById("player").click();
+        }
+        setTimeout(clickit,5000);
     </script>
     <audio src="fantasy.mp3" id="fantasy" loop></audio>
 </head>
@@ -32,7 +35,7 @@
     
         <div class="container">
             <div class="row" style="padding-top: 5%">
-                <img class="animate" src="https://www.shareicon.net/download/2016/07/27/802825_multimedia.svg" style="filter: grayscale(100%)">
+                <img class="animate" id="player" src="https://www.shareicon.net/download/2016/07/27/802825_multimedia.svg" onclick="play()" style="filter: grayscale(100%)">
             </div>
         </div>
 </body>
