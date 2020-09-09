@@ -13,22 +13,22 @@
     <title>Vinothini</title>
 
     <link href="css/custom.css" rel="stylesheet">
-    <link rel="icon" href="https://verily.com/press/assets/Ver_Mark_RGB.png"/>
+    <link rel="icon" href="/favicon.png"/>
     <script>
-        function play(){
+        function play() {
             var audio = document.getElementById("fantasy");
             audio.play();
+            document.getElementById('body').classList.add('colorize');
+            document.getElementById('disc').classList.add('animate');
         }
-        setTimeout(play,5000);
     </script>
     <audio src="media/theme.mp3" id="fantasy" loop></audio>
 </head>
 
-<body>
-    
+<body id="body">    
         <div class="container">
             <div class="row" style="padding-top: 5%">
-                <img class="animate" id="player" src="media/vinyl.svg" onclick="play()" style="filter: grayscale(100%)">
+                <img id="disc" id="player" src="media/vinyl.svg" onclick="play()" style="filter: grayscale(100%)">
             </div>
         </div>
 </body>
