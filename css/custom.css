@@ -1,4 +1,4 @@
-body{
+body {
     overflow: hidden;
     width: 100%;
     height: 100%;
@@ -7,22 +7,22 @@ body{
 	color:white;
 	text-align:center;
     animation-name: colorize;
-    animation-delay: 5s;
+    animation-delay: 0s;
     animation-duration: 7s;
     animation-iteration-count:infinite;
     animation-timing-function:ease-in;
 }
 
-img{
+img {
     height: 27%;
     width: 27%;
-    padding-top: 7%;
+    margin-top: 15vh;
 }
 
 
-img.animate{
+img.animate {
     animation-name: moveitmoveit;
-    animation-delay: 5s;
+    animation-delay: 0s;
     animation-duration: 7s;
     animation-iteration-count:infinite;
     animation-timing-function:linear;
@@ -31,8 +31,8 @@ img.animate{
 @keyframes moveitmoveit{
     0% {transform:rotate(0deg) scale(1); 
     filter: none;}
-    50% {transform:rotate(180deg) scale(1.4); 
-    filter: none;}
+    /* 50% {transform:rotate(180deg) scale(1); 
+    filter: none;} */
     100% {transform:rotate(360deg) scale(1); 
     filter: none;}
 }
@@ -47,9 +47,9 @@ img.animate{
 
 @media(max-width:767px) {
     img{
-        height: 55%;
-        width: 55%;
-        margin-top: 50%;
+        height: 85%;
+        width: 85%;
+        margin-top: 25vh;
     }
 
     .message {
