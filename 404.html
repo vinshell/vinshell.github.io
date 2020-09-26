@@ -21,7 +21,9 @@
             var audio = document.getElementById("fantasy");
             audio.play();
             document.getElementById('body').classList.add('colorize');
-            document.getElementById('disc').classList.add('animate');
+            document.getElementById('disc').classList.add('animate');            
+            document.getElementsByTagName('h1')[0].classList.add('visible');
+            document.getElementsByTagName('h2')[0].classList.add('visible');
         }
     </script>
     <audio src="media/birthday.mp3" id="fantasy" loop></audio>
