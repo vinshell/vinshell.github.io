@@ -46,6 +46,10 @@ img.animate {
     animation-timing-function:linear;
 }
 
+.row {
+    padding-top: 0.5em;
+}
+
 h1, h2 {
     font-family: 'Pacifico', cursive;
     font-size: 3em;
@@ -55,8 +59,32 @@ h1, h2 {
     visibility: hidden;
 }
 
-h1.visible, h2.visible {
+h1.visible {
     visibility: visible;
+    animation: leftentryanimation 3s ease-in-out;
+}
+
+h2.visible {
+    visibility: visible;
+    animation: rightentryanimation 4s ease-in-out;
+}
+
+@keyframes leftentryanimation {
+    from {
+        transform: translateX(-3000px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes rightentryanimation {
+    from {
+        transform: translateX(3000px);
+    }
+    to {
+        transform: translateX(0px);
+    }
 }
 
 h2 {
